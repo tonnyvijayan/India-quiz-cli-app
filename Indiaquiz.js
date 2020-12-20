@@ -58,9 +58,15 @@ for(i=0;i<quizQuestions.length;i++){
 
 };
 
+function highScoreChecker(point){
+  if((point>=23)||(point>=24)||(point>=26)){
+    console.log("You have made it into the hall of fame, please send me a screenshot to add your name")
+  }
+}
+
 // ending message
 console.log("\t\t\tThank you for taking the quiz, "+ username+ chalk.yellow.bold("\n\t\t\t\tYour final score is: "+ score));
-
+console.log(highScoreChecker(score));
 
 
 
